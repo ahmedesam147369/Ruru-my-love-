@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", serif;
+  --font-hand: "Aref Ruqaa", "Amiri", serif;
+  --font-display: "Reem Kufi", "Cairo", sans-serif;
+
+  --color-paper-bg: #FAF6F0;
+  --color-ink: #262120;
+  --color-ink-muted: #6B6260;
+  --color-rose-accent: #E11D48;
+}
+
+body {
+  background-color: #FAF6F0;
+  color: #262120;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+/* Notebook lined canvas texture option */
+.bg-notebook-lines {
+  background-image: linear-gradient(to bottom, transparent 95%, rgba(225, 29, 72, 0.05) 95%);
+  background-size: 100% 36px;
+}
+
+/* Canvas organic dots */
+.bg-canvas-dots {
+  background-image: radial-gradient(rgba(38, 33, 32, 0.08) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+}
+
+/* Open Soft Brutalist Ink Accents */
+.ink-underline {
+  background-image: linear-gradient(120deg, rgba(254, 205, 211, 0.6) 0%, rgba(253, 164, 175, 0.6) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 88%;
+}
+
+.ink-underline-amber {
+  background-image: linear-gradient(120deg, rgba(254, 240, 138, 0.6) 0%, rgba(253, 224, 71, 0.5) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 88%;
+}
+
+.ink-underline-purple {
+  background-image: linear-gradient(120deg, rgba(233, 213, 255, 0.6) 0%, rgba(216, 180, 254, 0.5) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 88%;
+}
+
+/* Stamp border styling without boxed backgrounds */
+.vintage-stamp {
+  border: 1.5px dashed #262120;
+  border-radius: 12px;
+}
+
+/* Soft brutalist button */
+.brutal-btn {
+  border: 2px solid #262120;
+  box-shadow: 2.5px 2.5px 0px #262120;
+  transition: all 0.15s ease-out;
+}
+.brutal-btn:hover {
+  transform: translate(-1.5px, -1.5px);
+  box-shadow: 4px 4px 0px #262120;
+}
+.brutal-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px #262120;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #FDA4AF;
+  border-radius: 999px;
+}
